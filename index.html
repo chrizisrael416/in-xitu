@@ -1,10 +1,337 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>In-Xitu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In-Xitu | A Student Entrepreneurial Venture</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b1020;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:
+radial-gradient(circle at top left,#1ed76033,transparent 30%),
+radial-gradient(circle at bottom right,#00c3ff33,transparent 30%),
+#0b1020;
+}
+
+.hero-content{
+max-width:900px;
+animation:fadeUp 1s ease;
+}
+
+.logo{
+width:150px;
+height:150px;
+border-radius:50%;
+background:white;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+font-weight:700;
+color:#2fa84f;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+opacity:.8;
+margin-bottom:30px;
+}
+
+.btn{
+padding:14px 28px;
+border:none;
+border-radius:50px;
+background:linear-gradient(90deg,#00ff88,#00c3ff);
+color:black;
+font-weight:600;
+cursor:pointer;
+text-decoration:none;
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+font-size:2.5rem;
+margin-bottom:40px;
+text-align:center;
+}
+
+.glass{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+padding:25px;
+}
+
+.about p{
+line-height:1.8;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.team-card h3{
+margin-bottom:8px;
+}
+
+.workshop{
+text-align:center;
+}
+
+.workshop h3{
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+padding:30px;
+text-align:center;
+opacity:.7;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.4rem;
+}
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to In-Xitu 🚀</h1>
-    <p>Our website is coming soon.</p>
+
+<section class="hero">
+<div class="hero-content">
+
+<div class="logo">
+In-Xitu
+</div>
+
+<h1>Innovating Biotechnology Through Entrepreneurship</h1>
+
+<p>
+A Student Entrepreneurial Venture focused on Plant Tissue Culture,
+Biotechnology Innovation, Research, Training and Sustainable Growth.
+</p>
+
+<a href="#workshop" class="btn">Explore Workshop</a>
+
+</div>
+</section>
+
+<section class="about">
+<h2 class="section-title">About In-Xitu</h2>
+
+<div class="glass">
+<p>
+In-Xitu is a student-driven entrepreneurial initiative dedicated to
+promoting biotechnology innovation, plant tissue culture awareness,
+scientific learning and entrepreneurial development. Through practical
+workshops, research activities and collaborative projects, we empower
+students to explore biotechnology beyond the classroom.
+</p>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Leadership Team</h2>
+
+<div class="grid">
+
+<div class="glass team-card">
+<h3>CEO</h3>
+<p>Rhythm</p>
+</div>
+
+<div class="glass team-card">
+<h3>COO</h3>
+<p>Huda</p>
+</div>
+
+<div class="glass team-card">
+<h3>CFO</h3>
+<p>Tithi</p>
+</div>
+
+<div class="glass team-card">
+<h3>Strategic Advisors</h3>
+<p>Keshvi & Bryan</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Departments</h2>
+
+<div class="grid">
+
+<div class="glass card">
+<h3>Research & Development</h3>
+<p>Led by Rudra</p>
+</div>
+
+<div class="glass card">
+<h3>Human Resources</h3>
+<p>Led by Shubhi</p>
+</div>
+
+<div class="glass card">
+<h3>Production</h3>
+<p>Led by Tanay</p>
+</div>
+
+<div class="glass card">
+<h3>CPC</h3>
+<p>Led by Harshil</p>
+</div>
+
+<div class="glass card">
+<h3>Marketing & Designing</h3>
+<p>Led by Bhavika</p>
+</div>
+
+</div>
+</section>
+
+<section id="workshop" class="workshop">
+
+<h2 class="section-title">Upcoming Workshop</h2>
+
+<div class="glass">
+
+<h3>🌱 Euphorbia Workshop</h3>
+
+<p>
+Hands-on introduction to Plant Tissue Culture,
+micropropagation concepts and biotechnology applications.
+</p>
+
+<br>
+
+<a href="#" class="btn">
+Registration Opening Soon
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="grid">
+
+<div class="glass">
+<h3>Lab Images</h3>
+<p>Coming Soon</p>
+</div>
+
+<div class="glass">
+<h3>Workshops</h3>
+<p>Coming Soon</p>
+</div>
+
+<div class="glass">
+<h3>Events</h3>
+<p>Coming Soon</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="glass">
+
+<p>📧 chrizisrael416@gmail.com</p>
+
+<br>
+
+<p>📞 +91 7802021042</p>
+
+<br>
+
+<p>
+📷 Instagram:
+<a style="color:#00ff88;"
+href="https://www.instagram.com/israelchristian_004"
+target="_blank">
+@israelchristian_004
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 In-Xitu | A Student Entrepreneurial Venture
+</footer>
+
 </body>
 </html>
